@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+
+            // 나
+
+            // function solution (a, b, c){
+            //     let answer;
+            //     let max;
+
+            //     if(a < b) {
+            //         max = a;
+            //         if(b + c <= max){
+            //             answer = "NO";
+            //         } else {
+            //             answer = "YES";
+            //         }
+            //     }
+            //     else {
+            //         max = b;
+            //         if(a + c <= max){
+            //             answer = "NO";
+            //         } else {
+            //             answer = "YES";
+            //         }
+            //     }
+            //     if(c < max) {
+            //         max = c;
+            //         if(a + b <= max){
+            //             answer = "NO";
+            //         } else {
+            //             answer = "YES";
+            //         }
+            //     }
+
+            //     return answer;
+            // }
+
+            // 선생님
+
+            // function solution (a, b, c){
+            //     let answer, max;
+            //     let sum = a + b + c;
+
+            //     if(a > b) max = a;
+            //     else max = b;
+
+            //     if(c > max) max = c;
+
+            //     if((sum - max) <= max) answer = "NO";
+            //     else answer = "YES";
+
+            //     return answer;
+            // }
+            console.log(solution(6, 7, 11))       // 출력값 : "YES"
+            console.log(solution(13, 33, 17))     // 출력값 : "NO"
+            console.log(solution(1, 2, 3))       // 출력값 : "NO"
+        </script>
+    </body>
+</html>
