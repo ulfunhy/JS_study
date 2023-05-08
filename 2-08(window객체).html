@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>window 내장객체</title>
+    </head>
+    <body>
+        <script>
+            // console.log(window);
+            // window.alert("이것은 대화창입니다.");
+            // alert("이것은 대화창입니다.");  // window는 생략 가능
+
+            // var yn = confirm("정말로 삭제하시겠습니까?");
+            // console.log(yn);
+
+            // if(confirm("정말로 삭제하시겠습니까?")) {
+            //     // 삭제 로직 실행
+            //     console.log("삭제 실행");
+            // }
+
+            // var passward =  prompt("너의 마음속으로 들어갈수 있는 비밀번호를 알려줘");
+            // console.log(passward);
+            // if(passward===null){
+            //     console.log("취소 선택");
+            // }
+            // else if(passward===""){
+            //     console.log("확인 선택");
+            // }
+            // else if(passward!==""){
+            //     console.log(passward);
+            // }
+
+            // window.open("https://www.naver.com/");   // 네이버 새탭으로 열기
+            // window.print();                          // 프린트 창 열기
+
+            // setTimeout
+            // setTimeout(function() {     
+            //     // alert("김현지 착해요")
+            //     console.log("3초 후에 프로그램이 실행됩니다.");
+            // }, 3000)
+
+            // setInterval
+
+            var i = 0;
+            var fnc = setInterval(function () {
+                console.log("1초마다 프로그램 호출 : " + i);
+                if (i === 5) clearInterval(fnc);
+                i++;
+            }, 1000);
+            
+        </script>
+    </body>
+</html>
