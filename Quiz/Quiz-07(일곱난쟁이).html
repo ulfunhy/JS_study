@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                let answer = arr;
+                // 방법1 : for문을 이용하는 방법
+                // let sum = 0;
+                // for(let i of arr){
+                //     sum += i;
+                // }
+
+                // 방법2 : 내장함수를 이용하는 방법
+                // let sum = arr.reduce(function(a, b)) {
+                //     return a + b;
+                // });
+
+                // 방법3 : arrow function을이용하는 방법
+                let sum = arr.reduce((a, b) => a + b);
+
+                console.log(sum);
+                
+                return answer;
+            }
+            let arr = [20, 7, 23, 19, 10, 15, 25, 8, 13];
+            console.log(solution(answer));
+        </script>
+    </body>
+</html>
