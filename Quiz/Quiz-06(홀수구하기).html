@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>홀수 구하기</title>
+    </head>
+    <body>
+        <script>
+            function solution(값){
+                // 나
+                // let answer;
+
+                // // insert Code
+                // for(let i = 0; i < arr.length; i++) {
+                //     if(arr[i] % 2 == 1){
+                //         answer += arr[i]
+                //     }
+                // }
+
+                // console.log(Math.min(...answer));
+
+                // 선생님
+                let answer = [];
+                let sum = 0, min = Number.MAX_SAFE_INTEGER;
+                for(let i of arr) {
+                    if(i % 2 == 1) {
+                        sum += i;
+                        if(i < min) min = i;
+                    }
+                }
+                answer.push(sum);
+                answer.push(min);
+                return answer;
+            }
+            let arr = [12, 77, 38, 41, 53, 92, 85];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
