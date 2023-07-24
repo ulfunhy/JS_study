@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Arrow Function</title>
+    </head>
+    <body>
+        <script>
+            hello1();
+            function hello1() {
+                console.log("Hello World1");
+            }
+
+            // hello2();   // hello2는 실행이 안됨
+            var hello2 = function(){
+                console.log("Hello World2");
+            }
+            hello2();
+
+            function hello3(){
+                console.log("Hello World3");
+            }
+            hello3();
+
+            // arrow function
+            var hello4 = () => {
+                console.log("Hello World4");
+                return "Hello World4";
+            }
+            var str1 = hello4();
+            console.log(str1);
+            
+            var hello5 = () => "Hello World5";
+
+            // 위의 hello5와 동일
+            var hello6 = () => {
+                return "Hello World6";
+            }
+
+            var hello7 = function(fullName) {
+                return "Hello7" + " " + fullName;
+            }
+            console.log(hello7("홍길동"));
+
+            // arrow function
+            // 함수 호출시 매개변수를 전달하는 경우
+            var hello8 = (fullName) => "Hello8" + " " + fullName;
+            console.log(hello8("홍길동"));
+
+            // 
+            var hello9 = (fullName) => "Hello9" + " " + fullName;
+            console.log(hello8("홍길동"));
+
+            // 수업 미완성
+        </script>
+    </body>
+</html>
