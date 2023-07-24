@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                // 나(출력 : 9 / 정답 : 10)
+                // let scores = 0;
+                // for(let i = 0; i < arr.length; i++) {
+                //     if(arr[i] == 1){
+                //         scores++;
+                //         if(arr[i-1] == 1) {
+                //             scores++;
+                //         }
+                //     }
+                // }
+                // return scores;
+
+                // 선생님
+                let answer = 0, cnt = 0;
+
+                for(let x of arr){     // of는 값을 불러오고 in은 index값을 불러옴
+                    if(x===1){
+                        cnt++;
+                        answer += cnt;
+                    }
+                    else {
+                        cnt = 0;
+                    }
+                }
+                return answer;
+            }
+            let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
