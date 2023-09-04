@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function solution(str){
+                // let answer = "YES";
+
+                // 방법1 : parseInt() 사용 금지
+                for (let x of str) {
+                    if (!isNaN(x)) {
+                        answer += x;
+                    }
+                }
+
+                // return parseInt(answer);
+
+                answer = "";
+                // 방법2 : parseInt() 사용 금지
+                for (let x of str) {
+                    if (!isNaN(x)) {
+                        answer = (answer * 10) + Number(x);
+                    }
+                }
+
+                answer = "";
+                // 방법3 : 정규표현식 사용
+                answer = Number(str.replace(/[^0-9]/g, ""));
+                return answer;
+            }
+
+            var str = "g0en2T0s8eSoft";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
